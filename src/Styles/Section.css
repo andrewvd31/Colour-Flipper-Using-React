@@ -1,0 +1,82 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.color-container{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: rebeccapurple;
+    color: white;
+    padding: 1em;
+}
+
+.container-text{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2.2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.container-button{
+    padding: 0.9em 2.5em;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+}
+
+.container-button:hover{
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.chose-color{
+    border: 1px solid white;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: inline-block;
+    margin-top: 0.5em;
+}
+
+.chose-color:hover{
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.color-button-container{
+    display: flex;
+    gap: 2rem;
+    margin: 0.75em 0 3em;
+}
+
+@media (max-width: 700px) {
+    .color-container{
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .container-text{
+        font-size: 1.5rem;
+    }
+
+    .color-button-container{
+        flex-direction: column;
+    }
+}
